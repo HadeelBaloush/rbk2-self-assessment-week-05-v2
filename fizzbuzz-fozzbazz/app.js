@@ -49,7 +49,7 @@ are named what $routeProvider and the partials are expecting  */
 .controller('fozzbazzCtrl', function($scope, counter){
   $scope.display;
 
-  $scope.increment = function(){
+  $scope.increment = function(counter){
     counter.value++;
     if(counter.value%4 === 0){
       $scope.display = 'FOZZ';
