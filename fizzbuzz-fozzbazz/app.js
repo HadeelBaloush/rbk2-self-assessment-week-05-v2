@@ -32,15 +32,17 @@ angular.module('app', ['ngRoute'])
     $scope.display = '';
     $scope.increment = function(){
       counter++;
-      if(counter%3 === 0){
-        $scope.display = 'FIZZ';
-      }
-      else if(counter%5 === 0){
-        $scope.display = 'BUZZ';
-      }
-      else if(counter%5 === 0 && counter%3 === 0){
-        $scope.display = 'FIZZBUZZ';
-      }
+       $scope.display = 'FIZZ'
+       console.log(counter, 'hhhhhhh')
+      // if(counter%3 === 0){
+      //   $scope.display = 'FIZZ';
+      // }
+      // else if(counter%5 === 0){
+      //   $scope.display = 'BUZZ';
+      // }
+      // else if(counter%5 === 0 && counter%3 === 0){
+      //   $scope.display = 'FIZZBUZZ';
+      // }
 
       // .addByOne().then(function(){
       //   console.log('It is incremented by one');
